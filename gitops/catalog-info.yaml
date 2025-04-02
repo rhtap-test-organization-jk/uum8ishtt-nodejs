@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: uum8ishtt-nodejs-gitops
+  description: This is GitOps manifest for uum8ishtt-nodejs   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=uum8ishtt-nodejs
+    backstage.io/kubernetes-id: uum8ishtt-nodejs 
+    backstage.io/techdocs-ref: dir:. 
+    jenkins.io/job-full-name: uum8ishtt-nodejs-gitops
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:uum8ishtt-nodejs
