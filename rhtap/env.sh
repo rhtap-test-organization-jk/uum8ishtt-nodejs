@@ -54,3 +54,5 @@ export FAIL_IF_TRUSTIFICATION_NOT_CONFIGURED=false
 
 export SBOMS_DIR=results/sboms
 export COSIGN_PUBLIC_KEY=
+
+export IMAGE_REGISTRY_USER=jkopriva
