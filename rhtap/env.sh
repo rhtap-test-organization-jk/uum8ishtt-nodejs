@@ -53,3 +53,4 @@ export TUF_MIRROR=${TUF_MIRROR-https://tuf-rhtap-tas.apps.cluster-8htmw.8htmw.sa
 export FAIL_IF_TRUSTIFICATION_NOT_CONFIGURED=false
 
 export SBOMS_DIR=results/sboms
+export COSIGN_PUBLIC_KEY=
